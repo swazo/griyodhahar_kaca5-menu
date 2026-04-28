@@ -123,6 +123,28 @@ object-fit:cover;
 cursor:pointer;
 }
 
+.menu-img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.menu-img{
+  pointer-events: auto;
+  -webkit-touch-callout: none;
+}
+
+.img-wrap{
+  position: relative;
+}
+
+.img-wrap::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
 /* ================= CONTENT ================= */
 .menu-content{
 padding:14px;
@@ -565,7 +587,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card makanan gammik">
-    <img class="menu-img" src="images/GamikBawis.jpeg" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/gammikBawis.jpeg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Gammik Bawis</div>
         <div class="menu-desc">Menu sudah termasuk nasi</div>
@@ -1675,6 +1697,11 @@ function zoomImage(src){
 document.getElementById("zoomView")?.addEventListener("click", function(){
   this.style.display = "none";
 });
+
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+});
+
 </script>
 
 </body>
