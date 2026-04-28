@@ -92,6 +92,21 @@ font-size:10px;}
   backdrop-filter: blur(10px);
   border:1px solid rgba(255,255,255,0.6);
 }
+
+#zoomView::after{
+  content: "Griyo Dhahar Kaca5";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+
 .menu-card.show{
 display:flex; }
 
@@ -473,7 +488,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card makanan poultry-meat">
-    <img class="menu-img" src="images/ayamMayo.jpeg" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/ayamMayo.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Ayam Mayo</div>
         <div class="menu-desc">Menu sudah termasuk nasi</div>
@@ -539,7 +554,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card makanan gammik">
-    <img class="menu-img" src="images/GamikBawis.jpeg" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/GammikBawis.jpeg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Gammik Bawis</div>
         <div class="menu-desc">Menu sudah termasuk nasi</div>
@@ -867,9 +882,9 @@ flex-grow:1;
     </div>
 
 <div class="menu-card extra">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/telurGoreng.jpeg" onclick="zoomImage(this.src)">
         <div class="menu-content">
-            <div class="menu-title">Telor Goreng</div>
+            <div class="menu-title">Telur Goreng</div>
             <div class="menu-desc">Pilihan : Ceplok / Dadar</div>
             <div class="menu-footer">
                 <div class="price">Rp5.000</div>
@@ -1056,7 +1071,7 @@ flex-grow:1;
   
  <!-- ORIENTAL -->
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/cumberFriz.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
            <div class="menu-title">Cumber Frizz</div>
         <div class="menu-desc">Iced</div>
@@ -1067,7 +1082,7 @@ flex-grow:1;
 </div>
 
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/orangeIced.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
             <div class="menu-title">Orange</div>
         <div class="menu-desc">Iced / Hot</div>
@@ -1100,7 +1115,7 @@ flex-grow:1;
 </div>
 
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/vanillaLatte.jpg" onclick="zoomImage(this.src)">
       <div class="menu-content">
         <div class="menu-title">Vanilla Latte</div>
         <div class="menu-desc">Iced</div>
@@ -1111,7 +1126,7 @@ flex-grow:1;
 </div>
 
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/lemonTea.jpg" onclick="zoomImage(this.src)">
         <div class="menu-content">
         <div class="menu-title">Lemontea</div>
         <div class="menu-desc">Iced / Hot</div>
@@ -1122,7 +1137,7 @@ flex-grow:1;
 </div>
 
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/leciTea.jpeg" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/leciTea.jpg" onclick="zoomImage(this.src)">
         <div class="menu-content">
         <div class="menu-title">Lychee Tea</div>
         <div class="menu-desc">Iced</div>
@@ -1133,7 +1148,7 @@ flex-grow:1;
 </div>
 
  <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/lemongrassTea.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Lemongrass Tea</div>
         <div class="menu-desc">Iced / Hot</div>
@@ -1144,10 +1159,9 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/ginger.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
-        <div class="menu-title">Ginger</div>
-        <div class="menu-desc">Hot</div>
+        <div class="menu-title">Hot Ginger</div>
         <div class="menu-footer">
             <div class="price">Rp8.000</div>
         </div>
@@ -1210,7 +1224,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/leciMojito.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Lychee Mojito</div>
         <div class="menu-desc">Perpaduan jeruk nipis, sirup leci, dan soda</div>
@@ -1221,7 +1235,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman oriental">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/yakultMojito.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Yakult Mojito</div>
         <div class="menu-desc">Perpaduan yakult, jeruk nipis dan soda</div>
@@ -1255,7 +1269,7 @@ flex-grow:1;
 	
     <!-- JUICE -->
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/avocadoJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Avocado Juice</div>
         <div class="menu-desc"></div>
@@ -1266,7 +1280,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/orangeJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Orange Juice</div>
         <div class="menu-desc"></div>
@@ -1277,7 +1291,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/strawberryJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Strawberry Juice</div>
         <div class="menu-desc"></div>
@@ -1288,7 +1302,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/mangoJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Mango Juice</div>
         <div class="menu-desc"></div>
@@ -1299,7 +1313,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/melonJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Melon Juice</div>
         <div class="menu-desc"></div>
@@ -1310,7 +1324,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/nagaJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Naga Juice</div>
         <div class="menu-desc"></div>
@@ -1321,7 +1335,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/sirsakJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Sirsak Juice</div>
         <div class="menu-desc"></div>
@@ -1332,7 +1346,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman juice">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/nangkaJuice.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Nangka Juice</div>
         <div class="menu-desc"></div>
@@ -1355,7 +1369,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman origin">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/cookiesOrigin.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Cookies</div>
         <div class="menu-desc">Iced</div>
@@ -1366,7 +1380,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman origin">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/matchaOrigin.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Matcha</div>
         <div class="menu-desc">Iced</div>
@@ -1411,7 +1425,7 @@ flex-grow:1;
   
   <!-- FLOAT -->
    <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/cookiesFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Cookies Float</div>
         <div class="menu-desc">Iced</div>
@@ -1422,7 +1436,7 @@ flex-grow:1;
 </div>
 
   <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/chocolateFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Chocolate Float</div>
         <div class="menu-desc">Iced</div>
@@ -1433,7 +1447,7 @@ flex-grow:1;
 </div>
 
   <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/matchaFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Matcha Float</div>
         <div class="menu-desc">Iced</div>
@@ -1444,7 +1458,7 @@ flex-grow:1;
 </div>
 
   <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/redvelvetFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Red Velvet Float</div>
         <div class="menu-desc">Iced</div>
@@ -1455,7 +1469,7 @@ flex-grow:1;
 </div>
 
   <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/taroFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Taro Float</div>
         <div class="menu-desc">Iced</div>
@@ -1466,7 +1480,7 @@ flex-grow:1;
 </div>
 
   <div class="menu-card minuman float">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/vanillaFloat.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Vanilla Float</div>
         <div class="menu-desc">Iced</div>
@@ -1547,7 +1561,7 @@ flex-grow:1;
 </div>
 
 <div class="menu-card minuman squash">
-    <img class="menu-img" src="images/Griyo.png" onclick="zoomImage(this.src)">
+    <img class="menu-img" src="images/orangeSquash.jpg" onclick="zoomImage(this.src)">
     <div class="menu-content">
         <div class="menu-title">Orange Squash</div>
         <div class="menu-desc">Minuman squash</div>
@@ -1641,15 +1655,3 @@ document.getElementById("zoomView")?.addEventListener("click", function(){
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
